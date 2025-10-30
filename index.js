@@ -1,5 +1,13 @@
-import heapSort from "./database.js";
+import express from "express";
 
-const Hs = heapSort([12, 11, 13, 5, 6, 7, -2, -8, 13, 1]);
-console.log("Sorted array is:", Hs);
-//  Output: Sorted array is: [ -8, -2, 1, 5, 6, 7, 11, 12, 13, 13 ]
+const app = express();
+const port = 3000;
+
+app.use(express.json());
+app.get("/", (req, res) => {
+  res.json({ message: "Google Appointments API is running !!!" });
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
