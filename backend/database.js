@@ -12,14 +12,4 @@ const sequelize = new Sequelize({
   logging: false,
 });
 
-const testConnection = async () => {
-  try {
-    await sequelize.authenticate();
-    console.log("@@ Conexiune reusita la baza de date.");
-  } catch (err) {
-    console.error("Erroare de conexine la DB:", err);
-  }
-};
-testConnection();
-
 export default sequelize;
