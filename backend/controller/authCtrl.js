@@ -7,7 +7,7 @@ import {
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-/*---array ce stocheaza refreshTokens pe perioada sesiuni de test---*/
+/*--array ce stocheaza refreshTokens pe perioada sesiuni de test--*/
 let newChips = [];
 
 class AuthCtrl {
