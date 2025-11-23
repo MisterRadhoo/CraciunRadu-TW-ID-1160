@@ -1,6 +1,6 @@
 ### Proiect Appointment Manager cu un serviciu integrat, Google Calendar
 
-***Appointment Manager este un REST API, care utilizeaza o baza de date pentru gestionarea utilizatorilor (autenfiricare JWT), programarilor si sincronizeaza programarile intr-un serviciu extern Google Calendar prin OAuth2.***
+**Appointment Manager este un REST API, care utilizeaza o baza de date pentru gestionarea utilizatorilor (autentificare JWT), programarilor si sincronizeaza programarile intr-un serviciu extern Google Calendar prin OAuth2.**
 ---
 ### Tehnologii folosite (dependencies pentru node.js)
 -**npm install - instalare dependente**
@@ -78,7 +78,7 @@ campuri:
 	
 }
 ```
-- **PATCH /api/users/:id - actualizare user dupa id**
+- **PATCH /api/users/:id - actualizare user dupa id (JWT)**
 ```json
   campuri:
 {
@@ -86,6 +86,46 @@ campuri:
             "password": "*********",
 }
 ```
-- **DELETE /users/:id - sterge utilizator dupa id**
+- **DELETE /users/:id - sterge utilizator dupa id (JWT)** 
 
 ### endpoint /api/google/calendar
+**Rute private, se folosesc numai cu (JWT) si Google OAuth2**
+
+- **POST /sync/:appointmentId - sincronizeaza un appointment dupa id, in Google Calendar**
+- **PUT /sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
+- **DELETE /sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
+
+### endpoint /api/google
+- **GET /api/google/auth/:id - logare cu Google OAuth2 (browser)**
+- **GET /api/google/callback - primire code si stare**
+
+### endpoint /api/appointment
+**Note: User-ul trebuie sa fie logat si sa aiba (JWT), appointment-urile sunt create pe baza la user id.**
+- **POST /api/appointment -- implementare nou appointment. (JWT)**
+  ```json
+  campuri:
+  {
+        "title": "StringTitle",
+		"description": "stringDescription",
+		"startTime": "YYYY-MM-DDT00:00:00",
+		"endTime": "YYYY-MM-DDT00:00:00",
+		"location": "stringLocation"
+  }
+  ```
+
+- **GET /api/appointment/user/:userId - returneaza appointments ale utilizatorului dupa id-ul acestuia. (JWT)**
+- **GET /api/appointment/:id - returneaza appointment dupa id. (JWT)**
+- **PATCH /api/appointment/:id - actulizeaza un appointment dupa id. (JWT)**
+```json
+campuri:
+{
+    "title": "StringTitle",
+    "description": "stringDescription",
+    "startTime": "YYYY-MM-DDT00:00:00",
+    "endTime": "YYYY-MM-DDT00:00:00",
+    "location": "stringLocation",     
+}
+```
+- **DELETE /api/appointment/:id - stergere appointment dupa id.(JWT)**
+  
+
