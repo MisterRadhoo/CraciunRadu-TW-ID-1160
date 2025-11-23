@@ -16,7 +16,7 @@
 ### Server
 - **node seed.js - populare baza de date cu date fake pentru test**
 - **npm run dev sau nodemon.server.js - pornire server**
----
+
 ### Resurse - endpoints
 - **/api/auth  - ruta auth**
 - **/api/users - ruta pentru utilizatori**
@@ -24,7 +24,6 @@
 - **/api/google - ruta de autentificare Google OAuth2**
 - **/api/appointment - ruta appointments**
 
----
 ### Operatii REST API
 
 - **GET /http://localhost:4500/ - URL server**
@@ -112,7 +111,7 @@ campuri:
 		"location": "stringLocation"
   }
   ```
-
+  
 - **GET /api/appointment/user/:userId - returneaza appointments ale utilizatorului dupa id-ul acestuia. (JWT)**
 - **GET /api/appointment/:id - returneaza appointment dupa id. (JWT)**
 - **PATCH /api/appointment/:id - actulizeaza un appointment dupa id. (JWT)**
