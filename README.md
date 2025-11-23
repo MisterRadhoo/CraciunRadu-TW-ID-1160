@@ -39,14 +39,12 @@ campuri:
 }
 ```
 
-**Autentificarea se face prin JWT (Bearer Token).** 
-**Header-ele necesare:**
+**Autentificarea se face prin JWT (Bearer Token).Header-ele necesare:**
 
-```
 ```
 Authorization: Bearer <ACCESS_TOKEN>
 x-refresh-token: <REFRESH_TOKEN>
-```
+
 ```
 
 - **POST /api/auth/refresh - reinprospatare refresh token**
