@@ -1,4 +1,4 @@
-# Proiect Appointment Manager cu un serviciu integrat, Google Calendar
+## Proiect Appointment Manager cu un serviciu integrat, Google Calendar
 
 Appointment Manager este un REST API, care utilizeaza o baza de date pentru gestionarea utilizatorilor (autenfiricare JWT), programarilor si sincronizeaza programarile intr-un serviciu extern Google Calendar prin OAuth2.
 ---
