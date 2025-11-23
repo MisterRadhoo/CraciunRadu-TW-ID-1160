@@ -17,7 +17,7 @@ Appointment Manager este un REST API, care utilizeaza o baza de date pentru gest
 - **/api/users - ruta pentru utilizatori**
 - **/api/google/calendar - ruta sincronizare appointments in Google Calendar**
 - **/api/google - ruta de autentificare Google OAuth2**
-- **/api/appointment - ruta appointment**
+- **/api/appointment - ruta appointments**
 ## Operatii REST API
 
 
