@@ -12,8 +12,8 @@ class AppointmentCtrl {
           expectedFormat: {
             title: "StringTitle",
             description: "stringDescription",
-            startTime: "YYYY-MM-DD",
-            endTime: "YYYY-MM-DD",
+            startTime: "YYYY-MM-DDT00:00:00",
+            endTime: "YYYY-MM-DDT00:00:00",
             location: "stringLocation",
           },
         });
@@ -143,8 +143,8 @@ class AppointmentCtrl {
           expectedFormat: {
             title: "StringTitle",
             description: "stringDescription",
-            startTime: "YYYY-MM-DD",
-            endTime: "YYYY-MM-DD",
+            startTime: "YYYY-MM-DDT00:00:00",
+            endTime: "YYYY-MM-DDT00:00:00",
             location: "stringLocation",
           },
         });

@@ -17,7 +17,7 @@ app.use(cookieParser());
 //rute
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
-app.use("/api/google", googleRoutes);
+app.use("/api/google/calendar", googleRoutes);
 app.use("/api/google", googleAuthRoutes);
 app.use("/api/appointment", appointmentRoutes);
 
