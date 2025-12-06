@@ -113,7 +113,7 @@ campuri:
 	"updated_at": "2025-11-23T14:48:34.123Z"
 }
 ```
-- **GET /api/users/:id - - returneaza un utilizator dupa id**
+- **GET /api/users/:id - returneaza un utilizator dupa id**
 ### Exemplu
 - **GET http://localhost:4500/api/users/1/**
 
@@ -135,14 +135,14 @@ campuri:
             "password": "*********",
 }
 ```
-- **DELETE /users/:id - sterge utilizator dupa id (JWT)** 
+- **DELETE /api/users/:id - sterge utilizator dupa id (JWT)** 
 
 ### endpoint /api/google/calendar
 **Rute private, se folosesc numai cu (JWT) si Google OAuth2**
 
-- **POST /sync/:appointmentId - sincronizeaza un appointment dupa id, in Google Calendar**
-- **PUT /sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
-- **DELETE /sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
+- **POST /api/google/calendar/sync/:appointmentId - sincronizeaza un appointment dupa id, in Google Calendar**
+- **PUT /api/google/calendar/sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
+- **DELETE /api/google/calendar/sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
 
 ### endpoint /api/google
 - **GET /api/google/auth/:id - logare cu Google OAuth2 (browser)**
