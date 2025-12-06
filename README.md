@@ -33,7 +33,7 @@ cd backend
 
 ```
 
-### 3.intalare dependente
+### 3.instalare dependente
 
 ```
 npm install
