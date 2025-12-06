@@ -3,19 +3,53 @@
 **Appointment Manager este un REST API, care utilizeaza o baza de date pentru gestionarea utilizatorilor (autentificare JWT), programarilor si sincronizeaza programarile intr-un serviciu extern Google Calendar prin OAuth2.**
 ---
 ### Tehnologii folosite (dependencies pentru node.js)
--**npm install - instalare dependente**
-- **node.js + express - implementare proiect cu arhitectura modulara**
-- **sqlite3 - baza de date, Sequelize - mapare a relatiilor**
-- **Auth - JWT(jsonwebtoken)**
+
+- **node.js - server side** 
+- **express - rute http**
+- **sqlite3 - baza de date** 
+- **Sequelize - mapare a relatiilor**
+- **JWT(jsonwebtoken)**
+- **cookie-parser**
+- **body-parser**
 - **bcrypt - criptare parola**
 - **dotenv**
 - **nodemon**
+- **morgan**
 - **googleapis - (Calendar API + Oauth2)**
-- **faker.js - implementare date fake si stocare in baza de date pentru testare API, in INSOMNIA**
+- **faker.js - implementare date fake si stocare in baza de date pentru testare, care consuma API in INSOMNIA**
+---
+### Instalare
+```
+1. git clone <repo-name>
 
-### Server
-- **node seed.js - populare baza de date cu date fake pentru test**
-- **npm run dev sau nodemon.server.js - pornire server**
+```
+
+### cd backend - schimba in directorul de lucru (CLI)
+```
+2. cd backend
+
+```
+
+```
+3. npm install
+
+```
+
+### Initializare baza de date (optional) - pentru testare
+
+```
+node seed.js
+
+```
+
+### Start server
+```
+npm run dev 
+or 
+nodemon server.js
+
+```
+
 
 ### Resurse - endpoints
 - **/api/auth  - ruta auth**
@@ -127,4 +161,4 @@ campuri:
 ```
 - **DELETE /api/appointment/:id - stergere appointment dupa id.(JWT)**
   
-
+**NOTE: Fisierul .env e integrat in proiect, se gaseste in folder backend**
