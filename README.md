@@ -113,8 +113,11 @@ campuri:
 	"updated_at": "2025-11-23T14:48:34.123Z"
 }
 ```
-- **GET /api/users/:id - returneaza un utilizator dupa id**
-- **POST /api/users - adauga un utilizator**
+- **GET /api/users/:id - - returneaza un utilizator dupa id**
+### Exemplu
+- **GET http://localhost:4500/api/users/1/**
+
+- **POST api/users - adauga un utilizator**
 ```json
 campuri:
 {
