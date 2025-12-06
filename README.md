@@ -83,6 +83,10 @@ campuri:
 
 ```
 Authorization: Bearer <ACCESS_TOKEN>
+```
+and
+
+```
 x-refresh-token: <REFRESH_TOKEN>
 
 ```
