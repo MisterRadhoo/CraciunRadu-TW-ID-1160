@@ -7,10 +7,13 @@ import googleRoutes from "./routes/googleRoutes.js";
 import googleAuthRoutes from "./routes/googleAuthRoutes.js";
 import appointmentRoutes from "./routes/appointmentRoutes.js";
 import cookieParser from "cookie-parser";
+import morgan from "morgan";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
+app.use(morgan("dev"));
 app.use(express.json());
 app.use(cookieParser());
 
@@ -30,6 +33,9 @@ async function startServer() {
   try {
     await sequelize.authenticate();
     console.log("@@ Conexiune reusita la baza de date.");
+
+    await sequelize.sync({ force: false });
+    console.log("Initializare baza de date cu succes!");
 
     app.listen(PORT, () => {
       console.log(`Server http is running on http://localhost:${PORT}`);
