@@ -19,27 +19,28 @@
 - **faker.js - implementare date fake si stocare in baza de date pentru testare, care consuma API in INSOMNIA**
 ---
 ### Ghid de instalare proiect
+### 1.Clonare repository
 
 ```
-1. git clone <repo-name>
-
-```
-
-### cd backend - schimba in directorul de lucru (comada CLI)
-
-```
-2. cd backend
+git clone <repo-name>
 
 ```
 
-### intalare dependente
+### 2. cd backend - schimba in directorul de lucru (comada CLI)
 
 ```
-3. npm install
+cd backend
 
 ```
 
-### Initializare baza de date (optional) - pentru testare
+### 3.intalare dependente
+
+```
+npm install
+
+```
+
+### 4.Initializare baza de date (optional) - pentru testare
 
 ```
 node seed.js
@@ -50,6 +51,7 @@ node seed.js
 
 ```
 npm run dev 
+
 ```
 **or**
 
@@ -84,7 +86,7 @@ campuri:
 ```
 Authorization: Bearer <ACCESS_TOKEN>
 ```
-and
+**and**
 
 ```
 x-refresh-token: <REFRESH_TOKEN>
