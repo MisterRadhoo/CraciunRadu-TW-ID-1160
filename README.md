@@ -117,7 +117,7 @@ campuri:
 ### Exemplu
 - **GET http://localhost:4500/api/users/1/**
 
-- **POST api/users - adauga un utilizator**
+- **POST /api/users - adauga un utilizator**
 ```json
 campuri:
 {
