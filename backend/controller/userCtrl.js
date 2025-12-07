@@ -5,7 +5,10 @@ class UserController {
   /*---GET  /users/:id----*/
   static async getUserId(req, res) {
     try {
-      const { id } = req.params;
+      const id = Number(req.params.id);
+      if (Number.isNaN(id)) {
+        return res.status(400).json({ message: "User id invalid!" });
+      }
       const user = await User.findByPk(id, {
         attributes: { exclude: ["password"] },
       });
@@ -63,7 +66,12 @@ class UserController {
   /*----PATCH /api/users/:id---*/
   static async updateUser(req, res) {
     try {
-      const { id } = req.params;
+      const id = Number(req.params.id);
+
+      if (Number.isNaN(id)) {
+        return res.status(400).json({ message: "User id invalid! la request update date user." });
+      }
+
       const { fullName, password } = req.body;
       if (!fullName && !password) {
         return res.status(400).json({
@@ -103,7 +111,10 @@ class UserController {
   /*---DELETE /users/:id---*/
   static async deleteUser(req, res) {
     try {
-      const { id } = req.params;
+      const id = Number(req.params.id);
+      if (Number.isNaN(id)) {
+        return res.status(400).json({ error: "User id invalid!" });
+      }
       const user = await User.findByPk(id);
       if (!user) {
         return res.status(404).json({ message: `UserId: ${id} nu exista.` });

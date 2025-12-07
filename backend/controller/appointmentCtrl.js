@@ -53,21 +53,19 @@ class AppointmentCtrl {
   /*--GET /api/appointment/user/:userId --*/
   static async getAppointmentsByUserId(req, res) {
     try {
-      const { userId } = req.params;
-
-      const id = Number(userId);
-      if (!Number(id)) {
+      const userId = Number(req.params.userId);
+      if (Number.isNaN(userId)) {
         return res.status(400).json({ error: "UserId invalid!" });
       }
 
-      if (req.user.id !== id) {
+      if (req.user.id !== userId) {
         return res.status(403).json({
           error: "Se pot vizualiza doar propriile programari!",
         });
       }
 
       const appointments = await Appointment.findAll({
-        where: { userId: id },
+        where: { userId },
         order: [["startTime", "ASC"]],
         attributes: [
           "id",
@@ -80,14 +78,18 @@ class AppointmentCtrl {
         ],
       });
 
+      // Daca exista sau nu programari, returneaza lista goala
       if (!appointments || appointments.length === 0) {
-        return res.status(404).json({ message: "Programari negasite in Db!" });
+        return res.status(200).json({
+          message: `Nu exista programari pentru user-ul cu id: ${userId}`,
+          total: 0,
+          appointments: []
+        });
       }
-
-      res.status(200).json({
-        message: `Programarile user-ului cu id: ${id}`,
+      return res.status(200).json({
+        message: `Programarile pentru user-ul cu id: ${userId}`,
         total: appointments.length,
-        appointments,
+        appointments
       });
     } catch (err) {
       console.error("Eroare la citirea programarilor: ", err.message);
@@ -98,7 +100,10 @@ class AppointmentCtrl {
   /*--GET /api/appointment/:id---*/
   static async getAppointmentbyId(req, res) {
     try {
-      const { id } = req.params;
+      const id = Number(req.params.id);
+      if (Number.isNaN(id)) {
+        return res.status(400).json({ error: "Appointment id invalid!" });
+      }
       const appointment = await Appointment.findOne({
         where: { id, userId: req.user.id }, //numai pentru user logat se pot vedea appointments;
         include: [
@@ -127,7 +132,10 @@ class AppointmentCtrl {
   /*--PATCH /api/appointment/:id---*/
   static async updateAppointment(req, res) {
     try {
-      const { id } = req.params;
+      const id = Number(req.params.id);
+      if (Number.isNaN(id)) {
+        return res.status(400).json({ message: "User id invalid! pentru actualizare" });
+      }
       const { title, description } = req.body;
       const appointment = await Appointment.findOne({
         where: { id, userId: req.user.id },
@@ -137,7 +145,7 @@ class AppointmentCtrl {
         return res.status(404).json({ error: "Programare negasia in DB!" });
       }
 
-      if (!title || !description) {
+      if (!title && !description) {
         return res.status(400).json({
           error: "Campurile 'title' sau 'description' sunt necesare!",
           expectedFormat: {
@@ -164,7 +172,10 @@ class AppointmentCtrl {
   /*---DELETE /api/appointment/:id---*/
   static async deleteAppointment(req, res) {
     try {
-      const { id } = req.params;
+      const id = Number(req.params.id);
+      if (Number.isNaN(id)) {
+        return res.status(400).json({ error: "Appointment id invalid" });
+      }
       const appointment = await Appointment.findOne({
         where: { id, userId: req.user.id },
       });

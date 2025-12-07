@@ -92,10 +92,20 @@ class AuthCtrl {
           .status(403)
           .json({ message: "RefreshToken invalid sau delogat!" });
       }
-      const newAccessToken = await generateAccessToken({
-        id: decoded.id,
-        fullName: decoded.fullName,
-      });
+
+      // rotatie refreshToken
+      // eliminam refreshToken vechi
+      newChips = newChips.filter((token) => token !== refreshToken);
+
+      const payload = { id: decoded.id, fullName: decoded.fullName };
+
+      //generare token-uri noi
+      const newAccessToken = await generateAccessToken(payload);
+      const newRefreshToken = await generateRefreshToken(payload);
+
+      //adaugare nou refreshToken generat
+      newChips.push(newRefreshToken);
+
       // res.cookie("accessToken", newAccessToken, {
       //   httpOnly: true,
       //   secure: "true",
@@ -105,6 +115,7 @@ class AuthCtrl {
       res.status(200).json({
         message: "Token de acces reinprospatat!",
         accessToken: newAccessToken,
+        refreshToken: newRefreshToken,
         tokenType: "Bearer",
       });
     } catch (err) {

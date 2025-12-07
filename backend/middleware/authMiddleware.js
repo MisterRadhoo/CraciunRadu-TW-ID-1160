@@ -1,4 +1,5 @@
 import { confirmToken } from "../utils/jwt.js";
+
 export default async function authorize(req, res, next) {
   try {
     const header = req.headers.authorization;
