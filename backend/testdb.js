@@ -47,7 +47,7 @@ import bcrypt from "bcrypt";
     }
 
     //Afiseaza un random User din lista de programari.
-    const randomUser = users[1];
+    const randomUser = users[3];
     const userAppointments = await User.findByPk(randomUser.id, {
       include: { model: Appointment, as: "appointments" },
     });

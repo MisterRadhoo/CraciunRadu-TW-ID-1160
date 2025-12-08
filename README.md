@@ -16,7 +16,7 @@
 - **nodemon**
 - **morgan**
 - **googleapis - (Calendar API + Oauth2)**
-- **faker.js - implementare date fake si stocare in baza de date pentru testare, care consuma API in INSOMNIA**
+- **faker.js - implementare date fake si stocare in baza de date pentru testare, care consuma API in Insomnia, Postman, etc..**
 ---
 ### Ghid de instalare proiect
 ### 1.Clonare repository

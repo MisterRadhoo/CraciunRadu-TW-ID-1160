@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get("/user/:userId", authorize, AppointmentCtrl.getAppointmentsByUserId);
 router.post("/", authorize, AppointmentCtrl.createAppointment);
-router.get("/:id", authorize, AppointmentCtrl.getAppointmentbyId);
+router.get("/:id", authorize, AppointmentCtrl.getAppointmentById);
 router.patch("/:id", authorize, AppointmentCtrl.updateAppointment);
 router.delete("/:id", authorize, AppointmentCtrl.deleteAppointment);
 

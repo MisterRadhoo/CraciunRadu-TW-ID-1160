@@ -8,12 +8,14 @@ import googleAuthRoutes from "./routes/googleAuthRoutes.js";
 import appointmentRoutes from "./routes/appointmentRoutes.js";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
+import cors from "cors";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 
 app.use(morgan("dev"));
+app.use(cors("http://localhost:5173/"));
 app.use(express.json());
 app.use(cookieParser());
 

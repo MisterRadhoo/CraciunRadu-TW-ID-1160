@@ -98,7 +98,7 @@ class AppointmentCtrl {
   }
 
   /*--GET /api/appointment/:id---*/
-  static async getAppointmentbyId(req, res) {
+  static async getAppointmentById(req, res) {
     try {
       const id = Number(req.params.id);
       if (Number.isNaN(id)) {
