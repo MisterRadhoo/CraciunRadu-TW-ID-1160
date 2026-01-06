@@ -63,6 +63,7 @@ class UserController {
       res.status(500).json({ error: "Internal Error Server" });
     }
   }
+
   /*----PATCH /api/users/:id---*/
   static async updateUser(req, res) {
     try {
@@ -75,7 +76,7 @@ class UserController {
       const { fullName, password } = req.body;
       if (!fullName && !password) {
         return res.status(400).json({
-          message: "Campuri necesare pentru update!",
+          message: "Campuri necesare pentru actualizare!",
           expectedFormat: {
             fullName: "String Name",
             password: "*********",

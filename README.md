@@ -155,6 +155,7 @@ User Routes:
 #### Exemplu
 - **GET http://localhost:4500/api/users/1/**
 
+
 - **POST /api/users - adauga un utilizator**
 ```json
 {
@@ -163,6 +164,18 @@ User Routes:
 	"email": "radhooAPI@fakerEmail.com"	
 }
 ```
+## Response: return json 201 created
+```json
+{
+	"message": "User implementat cu succes!",
+	"user": {
+		"id": 11,
+		"fullName": "Radhoo_Radhoo",
+		"email": "radhooAPI@fakerEmail.com"
+	}
+}
+```
+##
 
 - **PATCH /api/users/:id - actualizare user dupa id (JWT)**
 ```json

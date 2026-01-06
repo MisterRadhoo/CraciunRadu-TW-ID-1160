@@ -15,7 +15,7 @@ router.post("/sync/:appointmentId", authorize, async (req, res) => {
     if (!appointment) {
       return res
         .status(404)
-        .json({ error: "Programarea nu exista dupa id specificat." });
+        .json({ error: "Programarea nu exista dupa id-ul specificat." });
     }
 
     //implementare googleEvent in calendar

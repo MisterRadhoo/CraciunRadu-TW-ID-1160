@@ -78,7 +78,7 @@ class AppointmentCtrl {
         ],
       });
 
-      // Daca exista sau nu programari, returneaza lista goala
+      // Daca exista sau nu programari -> returneaza lista goala (cod pentru frond-end)
       if (!appointments || appointments.length === 0) {
         return res.status(200).json({
           message: `Nu exista programari pentru user-ul cu id: ${userId}`,
@@ -142,7 +142,7 @@ class AppointmentCtrl {
       });
 
       if (!appointment) {
-        return res.status(404).json({ error: "Programare negasia in DB!" });
+        return res.status(404).json({ error: "Programare negasia in baza de date!" });
       }
 
       if (!title && !description) {

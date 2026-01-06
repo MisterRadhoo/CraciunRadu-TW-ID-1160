@@ -4,7 +4,7 @@ import { User } from "../model/index.js";
 
 const router = express.Router();
 
-// Autentificare Google OAUTH2; /din browser se face auth;
+// Autentificare Google OAUTH2, din browser se face auth
 router.get("/auth/:userId", async (req, res) => {
   try {
     const { userId } = req.params;
