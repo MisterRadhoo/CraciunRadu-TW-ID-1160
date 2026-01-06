@@ -329,6 +329,25 @@ Appointment Routes:
 
 - **GET /api/appointment/:id - returneaza appointment dupa id. (JWT)**
 
+#### Response 200 Ok
+```json
+{
+	"id": 12,
+	"title": "Gathering resources for company and new contracts",
+	"description": "Testing and Migration",
+	"startTime": "2026-01-17T10:00:00.000Z",
+	"endTime": "2026-02-21T12:30:00.000Z",
+	"location": "Plaza Tower, 4th floor room 246 - Center LA",
+	"user": {
+		"id": 11,
+		"fullName": "Mr.Radhoo",
+		"email": "radhooAPI@fakerEmail.com"
+	}
+}
+
+```
+##
+
 - **PATCH /api/appointment/:id - actulizeaza un appointment dupa id. (JWT)**
 ```json
 {
