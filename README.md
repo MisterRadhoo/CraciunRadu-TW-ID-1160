@@ -360,6 +360,29 @@ Appointment Routes:
 }
 ```
 
+#### Response 200 Ok
+```json
+{
+	"message": "Programare actualizata cu succes!",
+	"appointment": {
+		"id": 11,
+		"title": "Renewal of employee contracts, second term",
+		"description": "Based by individual performance and commitment, every employee   should get a new contract, after evalution",
+		"startTime": "2026-02-16T08:00:00.000Z",
+		"endTime": "2026-02-19T10:30:00.000Z",
+		"userId": 11,
+		"location": "Plaza Tower, 2nd floor, room 1A - Baxter Wing LA",
+		"googleCalendarEventId": null,
+		"status": "completed",
+		"created_at": "2026-01-06T15:04:03.794Z",
+		"updated_at": "2026-01-06T15:15:28.060Z"
+	}
+}
+```
+##
+
+
+
 - **DELETE /api/appointment/:id - stergere appointment dupa id.(JWT)**
  ---
 
