@@ -67,6 +67,7 @@ npm run dev
 nodemon server.js
 
 ```
+##
 
 ### Resurse - endpoints
 - **/api/auth  - ruta auth**
@@ -79,9 +80,9 @@ nodemon server.js
 
 - **GET /http://localhost:4500/ - URL server**
 
-***
+
 #### endpoint /api/auth
-***
+
 
 - **POST /api/auth/login**
 ```json
