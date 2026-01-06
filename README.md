@@ -222,6 +222,13 @@ User Routes:
 **Rute private, se folosesc numai cu (JWT) si Google OAuth2**
 ##
 - **POST /api/google/calendar/sync/:appointmentId - sincronizeaza un appointment dupa id, in Google Calendar**
+
+#### Response 201 Created
+```json
+{
+	"message": "Programare sincronizata cu Google Calendar."
+}
+```
 - **PUT /api/google/calendar/sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
 - **DELETE /api/google/calendar/sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
 ##
