@@ -23,40 +23,46 @@
 
 ```bash
 
-git clone <repo-name>
+git clone https://github.com/MisterRadhoo/CraciunRadu-TW-ID-1160.git
 
 ```
 
 ### 2. cd backend - schimba in directorul de lucru (comada CLI)
 
-```
+```bash
+
 cd backend
 
 ```
 
 ### 3.instalare dependente
 
-```
+```bash
+
 npm install
 
 ```
 
 ### 4.Initializare baza de date (optional) - pentru testare
 
-```
+```bash
+
 node seed.js
 
 ```
 
 ### Start server
 
-```
+```bash
+
 npm run dev 
 
 ```
+
 **or**
 
-```
+```bash
+
 nodemon server.js
 
 ```
@@ -100,7 +106,18 @@ x-refresh-token: <REFRESH_TOKEN>
 
 - **POST /api/auth/logout - la delogare se pierde JWT token si refresh token**
 
-### endpoint /api/users
+#### endpoint /api/users
+---
+User Routes:
+
+| @Route                  | @Type  | @Access      | @Description      |
+| ------------------------|--------|--------------|-------------------|
+| /api/users/{id}         | GET    | public       | Get a single user |
+| /api/users              | POST   | public       | Add/create a user |
+| /api/users/{id}         | PATCH  | private(JWT) | Update a user     |
+| /api/users/{id}         | DELETE | private(JWT) | Delete a user     |
+
+
 ```json
 {
 	"id": 2,
@@ -131,7 +148,7 @@ x-refresh-token: <REFRESH_TOKEN>
 ```json
 {
             "fullName": "String Name",
-            "password": "*********",
+            "password": "*********"
 }
 ```
 
