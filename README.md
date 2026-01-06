@@ -159,6 +159,13 @@ x-refresh-token: <REFRESH_TOKEN>
 ```
 ##
 - **POST /api/auth/logout - la delogare se pierde JWT token si refresh token**
+
+#### Response 200 Ok
+```json
+{
+	"message": "Delogare cu succes!"
+}
+```
 ##
 
 #### Endpoint /api/users
