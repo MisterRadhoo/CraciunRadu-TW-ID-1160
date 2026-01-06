@@ -153,7 +153,7 @@ User Routes:
 
 - **GET /api/users/:id - returneaza un utilizator dupa id**
 
-#### Response: return json
+#### Response
 ```json
 {
 	"id": 11,
@@ -176,7 +176,7 @@ User Routes:
 	"email": "radhooAPI@fakerEmail.com"	
 }
 ```
-#### Response: return json
+#### Response
 ```json
 {
 	"message": "User implementat cu succes!",
