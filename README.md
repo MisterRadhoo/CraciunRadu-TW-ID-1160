@@ -152,10 +152,22 @@ User Routes:
 ---
 
 - **GET /api/users/:id - returneaza un utilizator dupa id**
-#### Exemplu
-- **GET http://localhost:4500/api/users/1/**
 
+#### Response: return json
+```json
+{
+	"id": 11,
+	"fullName": "Radhoo_Radhoo",
+	"email": "radhooAPI@fakerEmail.com",
+	"googleAccessToken": null,
+	"googleRefreshToken": null,
+	"googleTokenExpire": null,
+	"created_at": "2026-01-06T14:33:09.958Z",
+	"updated_at": "2026-01-06T14:33:09.958Z"
+}
 
+```
+##
 - **POST /api/users - adauga un utilizator**
 ```json
 {
@@ -164,7 +176,7 @@ User Routes:
 	"email": "radhooAPI@fakerEmail.com"	
 }
 ```
-#### Response: return json 201 created
+#### Response: return json
 ```json
 {
 	"message": "User implementat cu succes!",
