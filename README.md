@@ -275,6 +275,26 @@ Appointment Routes:
 	"location": "Plaza Tower,1 floor room 145 - Downtown LA"
 }
 ```
+
+#### Response 201 Created
+```json
+{
+	"message": "Programare creata cu succes!",
+	"appointment": {
+		"status": "scheduled",
+		"id": 11,
+		"title": "Renewal of employee contracts",
+		"description": "Based by individual performance and commitment, every employee   should get a new contract, after evalution",
+		"startTime": "2026-01-16T08:00:00.000Z",
+		"endTime": "2026-01-19T09:30:00.000Z",
+		"location": "Plaza Tower,1 floor room 145 - Downtown LA",
+		"userId": 11,
+		"updated_at": "2026-01-06T15:04:03.794Z",
+		"created_at": "2026-01-06T15:04:03.794Z"
+	}
+}
+```
+##
   
 - **GET /api/appointment/user/:userId - returneaza appointments ale utilizatorului dupa id-ul acestuia. (JWT)**
 
