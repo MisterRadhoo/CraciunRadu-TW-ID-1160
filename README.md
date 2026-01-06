@@ -443,4 +443,4 @@ Appointment Routes:
 ```
  ---
 
-**NOTE: Fisierul .env e integrat in proiect si urcat pe github, se gaseste in folder backend. Nu am putut implementa o solutie fiabila pentru token-urile Google OAuth2.**
+**NOTE: Fisierul .env e integrat in proiect si urcat pe github, se gaseste in directorul backend. Nu am putut implementa o solutie fiabila pentru token-urile Google OAuth2.**
