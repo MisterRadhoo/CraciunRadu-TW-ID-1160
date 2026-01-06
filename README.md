@@ -118,7 +118,7 @@ Auth Routes:
 }
 ```
 </details>
-> Password will be encrypted.
+
 ##
 
 **Autentificarea se face prin JWT (Bearer Token).Header-ele necesare:**
