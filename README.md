@@ -229,6 +229,8 @@ User Routes:
 	"message": "Programarea cu id-ul: 11 sincronizata cu Google Calendar."
 }
 ```
+<img src="backend/public/img/calendar.png" alt="Calendar" width="700" />
+
 - **PUT /api/google/calendar/sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
 - **DELETE /api/google/calendar/sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
 ##
