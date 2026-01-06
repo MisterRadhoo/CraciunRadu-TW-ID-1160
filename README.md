@@ -132,12 +132,32 @@ Authorization: Bearer <ACCESS_TOKEN>
 x-refresh-token: <REFRESH_TOKEN>
 
 ```
-
+##
 - **POST /api/auth/refresh - reinprospatare refresh token**
+
+<details><summary><b>Output</b></summary>
+<br/>
+
+```javascript
+{
+	"message": "Token de acces reinprospatat!",
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImZ1bGxOYW1lIjoiTXIuUmFkaG9vIiwiaWF0IjoxNzY3NzE2MjY0LCJleHAiOjE3Njc3MTk4NjR9.p7OT0tJrNOIZ1vlDOoXNV8KdGumu-KvcgcV2xEqr6Xw",
+	"refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImZ1bGxOYW1lIjoiTXIuUmFkaG9vIiwiaWF0IjoxNzY3NzE2MjY0LCJleHAiOjE3NjgzMjEwNjR9.dIpmgLFP3Fr9vTuWdUMQh3WmcdgwOi0l4PSEjRFaiqg",
+	"tokenType": "Bearer"
+}
+```
+</details>
+
+```
+Authorization: Bearer <ACCESS_TOKEN>
+```
+**and**
+
 ```
 x-refresh-token: <REFRESH_TOKEN>
-```
 
+```
+##
 - **POST /api/auth/logout - la delogare se pierde JWT token si refresh token**
 ##
 
