@@ -3,6 +3,11 @@
 **Appointment Manager este un REST API, care utilizeaza o baza de date pentru gestionarea utilizatorilor (autentificare JWT), programarilor si sincronizeaza programarile intr-un serviciu extern Google Calendar prin OAuth2.**
 ---
 ### The features in the API:
+- ✅ Login, logout and refresh and access token of users
+- ✅ Authentication using JSON Web tokens (JWT)
+- ✅ CRUD operations on the user endpoint
+- ✅ Users can check their appointments and perfom CRUD operantions on the appointment endpoint 
+- ✅ Users can sync their appointments with Google Calendar via account (users must be logged) and perform add and delete operation on appointments when they are synchronized or posted on calendar.
 
 ---
 ## Ghid de instalare proiect
