@@ -100,6 +100,24 @@ Auth Routes:
 	"password": "********"
 }
 ```
+<details><sumary><b>Output</b><summary>
+</br>
+
+```javascript
+{
+	"message": "Autentificare cu succes!",
+	"status": "token granted!",
+	"tokenType": "Bearer",
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImZ1bGxOYW1lIjoiTXIuUmFkaG9vIiwiaWF0IjoxNzY3NzE1NjA2LCJleHAiOjE3Njc3MTkyMDZ9.A9Mu1g8bUKEnEpKmxZrx6P0boxIglVE0976QtgqYP7k",
+	"refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImZ1bGxOYW1lIjoiTXIuUmFkaG9vIiwiaWF0IjoxNzY3NzE1NjA2LCJleHAiOjE3NjgzMjA0MDZ9.2SuP2-vQ3kppLbDPIKppo4UEJDE428nu5Cj3mLNof-s",
+	"expireIn": "06/01/2026, 19:06:46",
+	"user": {
+		"id": 11,
+		"fullName": "Mr.Radhoo"
+	}
+}
+```
+</details>
 
 **Autentificarea se face prin JWT (Bearer Token).Header-ele necesare:**
 
@@ -172,7 +190,7 @@ User Routes:
 ```json
 {
 	"fullName": "Radhoo_Radhoo",
-	"password": "***********",
+	"password": "parola",
 	"email": "radhooAPI@fakerEmail.com"	
 }
 ```
@@ -193,7 +211,7 @@ User Routes:
 ```json
 {
     "fullName": "Mr.Radhoo",
-    "password": "*********"
+    "password": "parola"
 }
 ```
 #### Response 200 Ok
@@ -233,7 +251,7 @@ User Routes:
 
 - **PUT /api/google/calendar/sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
 
-
+##
 - **DELETE /api/google/calendar/sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
 #### Response 200 Ok
 ```json
