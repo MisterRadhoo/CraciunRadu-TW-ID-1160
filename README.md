@@ -381,9 +381,15 @@ Appointment Routes:
 ```
 ##
 
-
-
 - **DELETE /api/appointment/:id - stergere appointment dupa id.(JWT)**
+
+#### Response 200 Ok
+```json
+{
+	"message": "Programare stearsa cu succes!",
+	"deletedId": 12
+}
+```
  ---
 
 **NOTE: Fisierul .env e integrat in proiect, se gaseste in folder backend**
