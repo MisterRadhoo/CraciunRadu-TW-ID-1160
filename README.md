@@ -2,21 +2,8 @@
 
 **Appointment Manager este un REST API, care utilizeaza o baza de date pentru gestionarea utilizatorilor (autentificare JWT), programarilor si sincronizeaza programarile intr-un serviciu extern Google Calendar prin OAuth2.**
 ---
-### Tehnologii folosite (dependencies pentru node.js)
+### The features in the API:
 
-- **node.js - server side** 
-- **express - rute http**
-- **sqlite3 - baza de date** 
-- **Sequelize - mapare a relatiilor**
-- **JWT(jsonwebtoken)**
-- **cookie-parser**
-- **body-parser**
-- **bcrypt - criptare parola**
-- **dotenv**
-- **nodemon**
-- **morgan**
-- **googleapis - (Calendar API + Oauth2)**
-- **faker.js - implementare date fake si stocare in baza de date pentru testare, care consuma API in Insomnia, Postman, etc..**
 ---
 ## Ghid de instalare proiect
 
@@ -456,4 +443,4 @@ Appointment Routes:
 ```
  ---
 
-**NOTE: Fisierul .env e integrat in proiect, se gaseste in folder backend**
+**NOTE: Fisierul .env e integrat in proiect si urcat pe github, se gaseste in folder backend. Nu am putut implementa o solutie fiabila pentru token-urile Google OAuth2.**
