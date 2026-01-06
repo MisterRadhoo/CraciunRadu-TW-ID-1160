@@ -50,7 +50,7 @@ class GoogleService {
       throw new Error(`Autentificare Google esuata: ${err.message}`);
     }
   }
-  /*---Implementare event Google Calendar----*/
+  /*---Implementare event Google Calendar---*/
   static async createGoogleEvent(userId, appointment) {
     try {
       const oauth2Client = await this.getGoogleClient(userId);
