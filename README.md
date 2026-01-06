@@ -167,7 +167,7 @@ User Routes:
 - **DELETE /api/users/:id - sterge utilizator dupa id (JWT)**
 
 ---
-#### Endpoint /api/google/calendar
+## Endpoint /api/google/calendar
 **Rute private, se folosesc numai cu (JWT) si Google OAuth2**
 ##
 - **POST /api/google/calendar/sync/:appointmentId - sincronizeaza un appointment dupa id, in Google Calendar**
@@ -175,13 +175,32 @@ User Routes:
 - **DELETE /api/google/calendar/sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
 ##
 
-#### Endpoint /api/google
+## Endpoint /api/google
 - **GET /api/google/auth/:id - logare cu Google OAuth2 (browser)**
 - **GET /api/google/callback - primire code si stare**
 ---
 
-### Endpoint /api/appointment
+#### Endpoint /api/appointment
 **Note: User-ul trebuie sa fie logat si sa aiba (JWT), appointment-urile sunt create pe baza la user id.**
+---
+
+#### Appointment Schema
+```json
+{
+	    "id": 1,
+        "title": "StringTitle",
+		"description": "stringDescription",
+		"startTime": "YYYY-MM-DDT00:00:00",
+		"endTime": "YYYY-MM-DDT00:00:00",
+		"userId": 2,
+		"location": "stringLocation",
+		"googleCalendarEventId": "6bq8c1h2i3j4k5l6m7n8o9p0",
+		"status": "scheduled",
+		"created_at": "2025-11-23T14:48:34.123Z",
+	    "updated_at": "2025-11-23T14:48:34.123Z"
+}
+```
+---
 
 - **POST /api/appointment -- implementare nou appointment. (JWT)**
 ```json
