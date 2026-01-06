@@ -210,6 +210,12 @@ User Routes:
 ##
 
 - **DELETE /api/users/:id - sterge utilizator dupa id (JWT)**
+#### Response 200 OK
+```json
+{
+	"message": "UserId: 1 a fost sters."
+}
+```
 
 ---
 ## Endpoint /api/google/calendar
