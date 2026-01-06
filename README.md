@@ -136,10 +136,10 @@ User Routes:
 
 | @Route                  | @Type  | @Access      | @Description      |
 | ------------------------|--------|--------------|-------------------|
-| /api/users/{id}         | GET    | public       | Get a single user |
+| /api/users/:id          | GET    | public       | Get a single user |
 | /api/users              | POST   | public       | Add/create a user |
-| /api/users/{id}         | PATCH  | private(JWT) | Update a user     |
-| /api/users/{id}         | DELETE | private(JWT) | Delete a user     |
+| /api/users/:id          | PATCH  | private(JWT) | Update a user     |
+| /api/users/:id          | DELETE | private(JWT) | Delete a user     |
 
 ---
 
@@ -200,6 +200,18 @@ User Routes:
 	    "updated_at": "2025-11-23T14:48:34.123Z"
 }
 ```
+---
+
+Appointment Routes:
+
+| @Route                         | @Type  | @Access      | @Description      |
+| -------------------------------|--------|--------------|-------------------|
+| /api/appointment/user/:userId  | GET    |                 
+| /api/appointment               | POST   | 
+| /api/appointment/:id           | GET    |                
+| /api/appointment/:id           | PATCH  |                      
+| /api/appointment/:id           | DELETE |                
+
 ---
 
 - **POST /api/appointment -- implementare nou appointment. (JWT)**
