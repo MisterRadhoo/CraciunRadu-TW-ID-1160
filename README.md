@@ -100,8 +100,8 @@ Auth Routes:
 	"password": "********"
 }
 ```
-<details><summary><b>Output</b><summary>
-</br>
+<details><summary><b>Output</b></summary>
+<br/>
 
 ```javascript
 {
