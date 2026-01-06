@@ -107,15 +107,6 @@ x-refresh-token: <REFRESH_TOKEN>
 - **POST /api/auth/logout - la delogare se pierde JWT token si refresh token**
 
 #### endpoint /api/users
----
-User Routes:
-
-| @Route                  | @Type  | @Access      | @Description      |
-| ------------------------|--------|--------------|-------------------|
-| /api/users/{id}         | GET    | public       | Get a single user |
-| /api/users              | POST   | public       | Add/create a user |
-| /api/users/{id}         | PATCH  | private(JWT) | Update a user     |
-| /api/users/{id}         | DELETE | private(JWT) | Delete a user     |
 
 ---
 #### User Schema
@@ -132,6 +123,17 @@ User Routes:
 	"updated_at": "2025-11-23T14:48:34.123Z"
 }
 ```
+---
+---
+User Routes:
+
+| @Route                  | @Type  | @Access      | @Description      |
+| ------------------------|--------|--------------|-------------------|
+| /api/users/{id}         | GET    | public       | Get a single user |
+| /api/users              | POST   | public       | Add/create a user |
+| /api/users/{id}         | PATCH  | private(JWT) | Update a user     |
+| /api/users/{id}         | DELETE | private(JWT) | Delete a user     |
+
 ---
 
 - **GET /api/users/:id - returneaza un utilizator dupa id**
