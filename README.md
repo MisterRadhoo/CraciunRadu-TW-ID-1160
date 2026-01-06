@@ -232,7 +232,15 @@ User Routes:
 <img src="backend/public/img/calendar.png" alt="Calendar" width="700" />
 
 - **PUT /api/google/calendar/sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
+
+
 - **DELETE /api/google/calendar/sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
+#### Response 200 Ok
+```json
+{
+	"meessage": "Event Google sters din calendar."
+}
+```
 ##
 
 ## Endpoint /api/google
