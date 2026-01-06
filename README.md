@@ -21,7 +21,8 @@
 ### Ghid de instalare proiect
 ### 1.Clonare repository
 
-```
+```bash
+
 git clone <repo-name>
 
 ```
@@ -74,7 +75,6 @@ nodemon server.js
 ### endpoint /api/auth
 - **POST /api/auth/login**
 ```json
-campuri:
 {
 		"fullName": "String Name",
 		"password": "********"
@@ -97,11 +97,11 @@ x-refresh-token: <REFRESH_TOKEN>
 ```
 x-refresh-token: <REFRESH_TOKEN>
 ```
+
 - **POST /api/auth/logout - la delogare se pierde JWT token si refresh token**
 
 ### endpoint /api/users
 ```json
-campuri:
 {
 	"id": 2,
 	"fullName": "StringName",
@@ -113,28 +113,28 @@ campuri:
 	"updated_at": "2025-11-23T14:48:34.123Z"
 }
 ```
+
 - **GET /api/users/:id - returneaza un utilizator dupa id**
 ### Exemplu
 - **GET http://localhost:4500/api/users/1/**
 
 - **POST /api/users - adauga un utilizator**
 ```json
-campuri:
 {
 		"fullName": "String Name",
 		"password": "***********",
-		"email": "stringName@exampleMail.com"
-	
+		"email": "stringName@exampleMail.com"	
 }
 ```
+
 - **PATCH /api/users/:id - actualizare user dupa id (JWT)**
 ```json
-  campuri:
 {
             "fullName": "String Name",
             "password": "*********",
 }
 ```
+
 - **DELETE /api/users/:id - sterge utilizator dupa id (JWT)** 
 
 ### endpoint /api/google/calendar
@@ -150,23 +150,24 @@ campuri:
 
 ### endpoint /api/appointment
 **Note: User-ul trebuie sa fie logat si sa aiba (JWT), appointment-urile sunt create pe baza la user id.**
+
 - **POST /api/appointment -- implementare nou appointment. (JWT)**
-  ```json
-  campuri:
-  {
+```json
+{
         "title": "StringTitle",
 		"description": "stringDescription",
 		"startTime": "YYYY-MM-DDT00:00:00",
 		"endTime": "YYYY-MM-DDT00:00:00",
 		"location": "stringLocation"
-  }
-  ```
+}
+```
   
 - **GET /api/appointment/user/:userId - returneaza appointments ale utilizatorului dupa id-ul acestuia. (JWT)**
+
 - **GET /api/appointment/:id - returneaza appointment dupa id. (JWT)**
+
 - **PATCH /api/appointment/:id - actulizeaza un appointment dupa id. (JWT)**
 ```json
-campuri:
 {
     "title": "StringTitle",
     "description": "stringDescription",
@@ -175,6 +176,7 @@ campuri:
     "location": "stringLocation",     
 }
 ```
+
 - **DELETE /api/appointment/:id - stergere appointment dupa id.(JWT)**
   
 **NOTE: Fisierul .env e integrat in proiect, se gaseste in folder backend**
