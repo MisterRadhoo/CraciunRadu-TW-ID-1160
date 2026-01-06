@@ -88,8 +88,8 @@ nodemon server.js
 - **POST /api/auth/login**
 ```json
 {
-		"fullName": "String Name",
-		"password": "********"
+	"fullName": "String Name",
+	"password": "********"
 }
 ```
 
@@ -150,17 +150,17 @@ User Routes:
 - **POST /api/users - adauga un utilizator**
 ```json
 {
-		"fullName": "String Name",
-		"password": "***********",
-		"email": "stringName@exampleMail.com"	
+	"fullName": "Radhoo_Radhoo",
+	"password": "***********",
+	"email": "radhooAPI@fakerEmail.com"	
 }
 ```
 
 - **PATCH /api/users/:id - actualizare user dupa id (JWT)**
 ```json
 {
-            "fullName": "String Name",
-            "password": "*********"
+    "fullName": "Mr.Radhoo",
+    "password": "*********"
 }
 ```
 
@@ -187,17 +187,17 @@ User Routes:
 #### Appointment Schema
 ```json
 {
-	    "id": 1,
-        "title": "StringTitle",
-		"description": "stringDescription",
-		"startTime": "YYYY-MM-DDT00:00:00",
-		"endTime": "YYYY-MM-DDT00:00:00",
-		"userId": 2,
-		"location": "stringLocation",
-		"googleCalendarEventId": "6bq8c1h2i3j4k5l6m7n8o9p0",
-		"status": "scheduled",
-		"created_at": "2025-11-23T14:48:34.123Z",
-	    "updated_at": "2025-11-23T14:48:34.123Z"
+	"id": 1,
+    "title": "StringTitle",
+	"description": "stringDescription",
+	"startTime": "YYYY-MM-DDT00:00:00",
+	"endTime": "YYYY-MM-DDT00:00:00",
+	"userId": 2,
+	"location": "stringLocation",
+	"googleCalendarEventId": "6bq8c1h2i3j4k5l6m7n8o9p0",
+	"status": "scheduled",
+	"created_at": "2025-11-23T14:48:34.123Z",
+	"updated_at": "2025-11-23T14:48:34.123Z"
 }
 ```
 ---
@@ -217,11 +217,11 @@ Appointment Routes:
 - **POST /api/appointment -- implementare nou appointment. (JWT)**
 ```json
 {
-        "title": "StringTitle",
-		"description": "stringDescription",
-		"startTime": "YYYY-MM-DDT00:00:00",
-		"endTime": "YYYY-MM-DDT00:00:00",
-		"location": "stringLocation"
+    "title": "Renewal of employee contracts",
+	"description": "Based by individual performance and commitment, every employee   should get a new contract, after evalution",
+	"startTime": "2026-01-16T10:00:00",
+	"endTime": "2026-01-19T11:30:00",
+	"location": "Plaza Tower,1 floor room 145 - Downtown LA"
 }
 ```
   
@@ -232,14 +232,15 @@ Appointment Routes:
 - **PATCH /api/appointment/:id - actulizeaza un appointment dupa id. (JWT)**
 ```json
 {
-    "title": "StringTitle",
-    "description": "stringDescription",
-    "startTime": "YYYY-MM-DDT00:00:00",
-    "endTime": "YYYY-MM-DDT00:00:00",
-    "location": "stringLocation",     
+    "title": "Renewal of employee contracts",
+	"description": "Based by individual performance and commitment, every employee   should get a new contract, after evalution",
+	"startTime": "2026-01-16T10:00:00",
+	"endTime": "2026-01-19T11:30:00",
+	"location": "Plaza Tower,1 floor room 145 - Downtown LA"     
 }
 ```
 
 - **DELETE /api/appointment/:id - stergere appointment dupa id.(JWT)**
-  
+ ---
+
 **NOTE: Fisierul .env e integrat in proiect, se gaseste in folder backend**
