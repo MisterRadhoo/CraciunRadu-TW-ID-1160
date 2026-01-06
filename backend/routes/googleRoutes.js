@@ -25,7 +25,7 @@ router.post("/sync/:appointmentId", authorize, async (req, res) => {
     );
     await appointment.update({ googleCalendarEventId: googleEventId });
     res.status(201).json({
-      message: "Programare sincronizata cu Google Calendar.",
+      message: `Programarea cu id-ul: ${req.params.appointmentId} sincronizata cu Google Calendar.`,
     });
   } catch (err) {
     console.error("Eroare sync Google:", err.message);

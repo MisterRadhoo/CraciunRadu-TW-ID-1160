@@ -226,7 +226,7 @@ User Routes:
 #### Response 201 Created
 ```json
 {
-	"message": "Programare sincronizata cu Google Calendar."
+	"message": "Programarea cu id-ul: 11 sincronizata cu Google Calendar."
 }
 ```
 - **PUT /api/google/calendar/sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
