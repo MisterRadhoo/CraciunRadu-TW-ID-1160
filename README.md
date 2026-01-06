@@ -79,7 +79,7 @@ nodemon server.js
 
 - **GET /http://localhost:4500/ - URL server**
 
-### endpoint /api/auth
+#### endpoint /api/auth
 - **POST /api/auth/login**
 ```json
 {
@@ -138,7 +138,7 @@ User Routes:
 ---
 
 - **GET /api/users/:id - returneaza un utilizator dupa id**
-### Exemplu
+#### Exemplu
 - **GET http://localhost:4500/api/users/1/**
 
 - **POST /api/users - adauga un utilizator**
@@ -158,14 +158,19 @@ User Routes:
 }
 ```
 
-- **DELETE /api/users/:id - sterge utilizator dupa id (JWT)** 
+- **DELETE /api/users/:id - sterge utilizator dupa id (JWT)**
 
-### endpoint /api/google/calendar
+<details>
+<br/>
+
+#### endpoint /api/google/calendar
 **Rute private, se folosesc numai cu (JWT) si Google OAuth2**
 
 - **POST /api/google/calendar/sync/:appointmentId - sincronizeaza un appointment dupa id, in Google Calendar**
 - **PUT /api/google/calendar/sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
 - **DELETE /api/google/calendar/sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
+
+</details>
 
 ### endpoint /api/google
 - **GET /api/google/auth/:id - logare cu Google OAuth2 (browser)**
