@@ -164,7 +164,7 @@ User Routes:
 	"email": "radhooAPI@fakerEmail.com"	
 }
 ```
-## Response: return json 201 created
+#### Response: return json 201 created
 ```json
 {
 	"message": "User implementat cu succes!",
