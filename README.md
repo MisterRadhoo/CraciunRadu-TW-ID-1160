@@ -77,7 +77,7 @@ nodemon server.js
 - **/api/appointment - ruta appointments**
 ##
 
-### Operatii REST API
+## Operatii REST API
 
 - **GET /http://localhost:4500/ - URL server**
 
