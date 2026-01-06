@@ -153,7 +153,7 @@ User Routes:
 
 - **GET /api/users/:id - returneaza un utilizator dupa id**
 
-#### Response
+#### Response 200 Ok
 ```json
 {
 	"id": 11,
@@ -176,7 +176,7 @@ User Routes:
 	"email": "radhooAPI@fakerEmail.com"	
 }
 ```
-#### Response
+#### Response 201 Created
 ```json
 {
 	"message": "User implementat cu succes!",
@@ -196,7 +196,7 @@ User Routes:
     "password": "*********"
 }
 ```
-#### Response
+#### Response 200 Ok
 ```json
 {
 	"message": "UserId: 11 a fost actualizat cu succes!",
@@ -210,7 +210,7 @@ User Routes:
 ##
 
 - **DELETE /api/users/:id - sterge utilizator dupa id (JWT)**
-#### Response 200 OK
+#### Response 200 Ok
 ```json
 {
 	"message": "UserId: 1 a fost sters."
