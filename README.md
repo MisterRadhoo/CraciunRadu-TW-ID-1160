@@ -118,7 +118,7 @@ User Routes:
 | /api/users/{id}         | DELETE | private(JWT) | Delete a user     |
 
 ---
-### User Schema
+#### User Schema
 
 ```json
 {
