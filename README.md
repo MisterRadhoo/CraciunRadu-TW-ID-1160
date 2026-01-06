@@ -82,7 +82,7 @@ nodemon server.js
 - **GET /http://localhost:4500/ - URL server**
 ##
 
-#### endpoint /api/auth
+#### Endpoint /api/auth
 ---
 
 - **POST /api/auth/login**
@@ -113,7 +113,7 @@ x-refresh-token: <REFRESH_TOKEN>
 - **POST /api/auth/logout - la delogare se pierde JWT token si refresh token**
 ##
 
-#### endpoint /api/users
+#### Endpoint /api/users
 
 ---
 #### User Schema
@@ -167,19 +167,20 @@ User Routes:
 - **DELETE /api/users/:id - sterge utilizator dupa id (JWT)**
 
 ---
-#### endpoint /api/google/calendar
+#### Endpoint /api/google/calendar
 **Rute private, se folosesc numai cu (JWT) si Google OAuth2**
-
+##
 - **POST /api/google/calendar/sync/:appointmentId - sincronizeaza un appointment dupa id, in Google Calendar**
 - **PUT /api/google/calendar/sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
 - **DELETE /api/google/calendar/sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
+##
 
-#### endpoint /api/google
+#### Endpoint /api/google
 - **GET /api/google/auth/:id - logare cu Google OAuth2 (browser)**
 - **GET /api/google/callback - primire code si stare**
 ---
 
-### endpoint /api/appointment
+### Endpoint /api/appointment
 **Note: User-ul trebuie sa fie logat si sa aiba (JWT), appointment-urile sunt create pe baza la user id.**
 
 - **POST /api/appointment -- implementare nou appointment. (JWT)**
