@@ -100,7 +100,7 @@ Auth Routes:
 	"password": "********"
 }
 ```
-<details><sumary><b>Output</b><summary>
+<details><summary><b>Output</b><summary>
 </br>
 
 ```javascript
@@ -118,6 +118,8 @@ Auth Routes:
 }
 ```
 </details>
+> Password will be encrypted.
+##
 
 **Autentificarea se face prin JWT (Bearer Token).Header-ele necesare:**
 
