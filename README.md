@@ -298,6 +298,7 @@ Appointment Routes:
   
 - **GET /api/appointment/user/:userId - returneaza appointments ale utilizatorului dupa id-ul acestuia. (JWT)**
 
+#### Response 200 Ok
 ```json
 {
 	"message": "Programarile pentru user-ul cu id: 11",
