@@ -160,9 +160,7 @@ User Routes:
 
 - **DELETE /api/users/:id - sterge utilizator dupa id (JWT)**
 
-<details>
-<br/>
-
+---
 #### endpoint /api/google/calendar
 **Rute private, se folosesc numai cu (JWT) si Google OAuth2**
 
@@ -170,11 +168,10 @@ User Routes:
 - **PUT /api/google/calendar/sync/:appointmentId - sincronizeaza actualizare appointment dupa id, in Google Calendar**
 - **DELETE /api/google/calendar/sync/:appointmentId - sincronizeaza si sterge un appointment dupa id, in Google Calendar**
 
-</details>
-
-### endpoint /api/google
+#### endpoint /api/google
 - **GET /api/google/auth/:id - logare cu Google OAuth2 (browser)**
 - **GET /api/google/callback - primire code si stare**
+---
 
 ### endpoint /api/appointment
 **Note: User-ul trebuie sa fie logat si sa aiba (JWT), appointment-urile sunt create pe baza la user id.**
