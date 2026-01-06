@@ -67,14 +67,15 @@ npm run dev
 nodemon server.js
 
 ```
-##
+---
 
-### Resurse - endpoints
+## Resurse - endpoints
 - **/api/auth  - ruta auth**
 - **/api/users - ruta pentru utilizatori**
 - **/api/google/calendar - ruta sincronizare appointments in Google Calendar**
 - **/api/google - ruta de autentificare Google OAuth2**
 - **/api/appointment - ruta appointments**
+##
 
 ### Operatii REST API
 
