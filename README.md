@@ -18,7 +18,7 @@
 - **googleapis - (Calendar API + Oauth2)**
 - **faker.js - implementare date fake si stocare in baza de date pentru testare, care consuma API in Insomnia, Postman, etc..**
 ---
-### Ghid de instalare proiect
+## Ghid de instalare proiect
 
 #### 1.Clonare repository
 
@@ -28,7 +28,7 @@ git clone https://github.com/MisterRadhoo/CraciunRadu-TW-ID-1160.git
 
 ```
 
-#### 2. cd backend - schimba in directorul de lucru (comada CLI)
+#### 2.cd backend - schimba in directorul de lucru (comada CLI)
 
 ```bash
 
@@ -52,7 +52,7 @@ node seed.js
 
 ```
 
-#### Start server
+#### 5.Start server
 
 ```bash
 
@@ -79,7 +79,10 @@ nodemon server.js
 
 - **GET /http://localhost:4500/ - URL server**
 
+---
 #### endpoint /api/auth
+---
+
 - **POST /api/auth/login**
 ```json
 {
