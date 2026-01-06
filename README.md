@@ -298,6 +298,34 @@ Appointment Routes:
   
 - **GET /api/appointment/user/:userId - returneaza appointments ale utilizatorului dupa id-ul acestuia. (JWT)**
 
+```json
+{
+	"message": "Programarile pentru user-ul cu id: 11",
+	"total": 2,
+	"appointments": [
+		{
+			"id": 11,
+			"title": "Renewal of employee contracts",
+			"description": "Based by individual performance and commitment, every employee   should get a new contract, after evalution",
+			"startTime": "2026-01-16T08:00:00.000Z",
+			"endTime": "2026-01-19T09:30:00.000Z",
+			"location": "Plaza Tower,1 floor room 145 - Downtown LA",
+			"status": "scheduled"
+		},
+		{
+			"id": 12,
+			"title": "Gathering resources for company and new contracts",
+			"description": "Testing and Migration",
+			"startTime": "2026-01-17T10:00:00.000Z",
+			"endTime": "2026-02-21T12:30:00.000Z",
+			"location": "Plaza Tower, 4th floor room 246 - Center LA",
+			"status": "scheduled"
+		}
+	]
+}
+```
+##
+
 - **GET /api/appointment/:id - returneaza appointment dupa id. (JWT)**
 
 - **PATCH /api/appointment/:id - actulizeaza un appointment dupa id. (JWT)**
