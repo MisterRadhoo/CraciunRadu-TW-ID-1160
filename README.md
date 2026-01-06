@@ -88,7 +88,7 @@ Auth Routes:
 
 | @Route                  | @Type  | @Access   | @Description                 |
 | ------------------------|--------|-----------|------------------------------|
-| /api/atuh/login         | POST   | public    | User login account           |
+| /api/auth/login         | POST   | public    | User login account           |
 | /api/auth/refresh       | POST   | public    | User refresh token/jwt token |
 | /api/auth/logout        | POST   | public    | User logout account          |
 
