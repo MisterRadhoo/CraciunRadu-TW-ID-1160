@@ -204,13 +204,13 @@ User Routes:
 
 Appointment Routes:
 
-| @Route                         | @Type  | @Access      | @Description      |
-| -------------------------------|--------|--------------|-------------------|
-| /api/appointment/user/:userId  | GET    |                 
-| /api/appointment               | POST   | 
-| /api/appointment/:id           | GET    |                
-| /api/appointment/:id           | PATCH  |                      
-| /api/appointment/:id           | DELETE |                
+| @Route                         | @Type  | @Access                 | @Description             |
+| -------------------------------|--------|-------------------------|--------------------------|
+| /api/appointment/user/:userId  | GET    | private/User acc. (JWT) | Get user appointments    |              
+| /api/appointment               | POST   | private/User acc. (JWT) | Create appointment       |                
+| /api/appointment/:id           | GET    | private/User acc. (JWT) | Get a single appointment |            
+| /api/appointment/:id           | PATCH  | private/user acc. (JWT) | Update appointment       |         
+| /api/appointment/:id           | DELETE | private/user acc. (JWT) | Delete appointment       |             
 
 ---
 
