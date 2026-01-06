@@ -196,6 +196,18 @@ User Routes:
     "password": "*********"
 }
 ```
+#### Response
+```json
+{
+	"message": "UserId: 11 a fost actualizat cu succes!",
+	"user": {
+		"id": 11,
+		"fullName": "Mr.Radhoo",
+		"email": "radhooAPI@fakerEmail.com"
+	}
+}
+```
+##
 
 - **DELETE /api/users/:id - sterge utilizator dupa id (JWT)**
 

@@ -96,7 +96,7 @@ class UserController {
       }
       await user.save();
       return res.status(200).json({
-        message: `UserId: ${id} a fost actualizat cu succes.`,
+        message: `UserId: ${id} a fost actualizat cu succes!`,
         user: {
           id: user.id,
           fullName: user.fullName,
