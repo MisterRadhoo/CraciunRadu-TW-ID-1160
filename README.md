@@ -19,8 +19,8 @@
 - **faker.js - implementare date fake si stocare in baza de date pentru testare, care consuma API in Insomnia, Postman, etc..**
 ---
 ### Ghid de instalare proiect
-----
-### 1.Clonare repository
+
+#### 1.Clonare repository
 
 ```bash
 
@@ -28,7 +28,7 @@ git clone https://github.com/MisterRadhoo/CraciunRadu-TW-ID-1160.git
 
 ```
 
-### 2. cd backend - schimba in directorul de lucru (comada CLI)
+#### 2. cd backend - schimba in directorul de lucru (comada CLI)
 
 ```bash
 
@@ -36,7 +36,7 @@ cd backend
 
 ```
 
-### 3.instalare dependente
+#### 3.instalare dependente
 
 ```bash
 
@@ -44,7 +44,7 @@ npm install
 
 ```
 
-### 4.Initializare baza de date (optional) - pentru testare
+#### 4.Initializare baza de date (optional) - pentru testare
 
 ```bash
 
@@ -52,7 +52,7 @@ node seed.js
 
 ```
 
-### Start server
+#### Start server
 
 ```bash
 
