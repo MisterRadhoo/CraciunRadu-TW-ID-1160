@@ -232,11 +232,12 @@ Appointment Routes:
 - **PATCH /api/appointment/:id - actulizeaza un appointment dupa id. (JWT)**
 ```json
 {
-    "title": "Renewal of employee contracts",
+    "title": "Renewal of employee contracts, second term",
 	"description": "Based by individual performance and commitment, every employee   should get a new contract, after evalution",
-	"startTime": "2026-01-16T10:00:00",
-	"endTime": "2026-01-19T11:30:00",
-	"location": "Plaza Tower,1 floor room 145 - Downtown LA"     
+	"startTime": "2026-02-16T10:00:00",
+	"endTime": "2026-02-19T12:30:00",
+	"location": "Plaza Tower, 2nd floor, room 1A - Baxter Wing LA",
+	"status": "completed"   
 }
 ```
 
