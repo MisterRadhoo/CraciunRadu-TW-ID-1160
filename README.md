@@ -181,7 +181,7 @@ User Routes:
 ---
 
 #### Endpoint /api/appointment
-**Note: User-ul trebuie sa fie logat si sa aiba (JWT), appointment-urile sunt create pe baza la user id.**
+**Note: User-ul trebuie sa fie logat si sa aiba (JWT), appointment-urile sunt create pe baza de user id.**
 ---
 
 #### Appointment Schema
