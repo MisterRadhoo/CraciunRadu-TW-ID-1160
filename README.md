@@ -80,10 +80,10 @@ nodemon server.js
 ## Operatii REST API
 
 - **GET /http://localhost:4500/ - URL server**
-
+##
 
 #### endpoint /api/auth
-
+---
 
 - **POST /api/auth/login**
 ```json
@@ -111,6 +111,7 @@ x-refresh-token: <REFRESH_TOKEN>
 ```
 
 - **POST /api/auth/logout - la delogare se pierde JWT token si refresh token**
+##
 
 #### endpoint /api/users
 
