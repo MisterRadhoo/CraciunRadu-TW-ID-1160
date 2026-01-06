@@ -123,7 +123,7 @@ x-refresh-token: <REFRESH_TOKEN>
 	"updated_at": "2025-11-23T14:48:34.123Z"
 }
 ```
----
+
 ---
 User Routes:
 
